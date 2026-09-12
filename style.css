@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
 
-@font-face {
-  font-family: 'Alex Brush';
-  src: url('assets/fonts/alex-brush-latin-400-normal.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --paper: #f5f7f0;
   --surface: #ffffff;
@@ -130,12 +122,12 @@ hr.rule { display: none; }
 .hero .kicker {
   display: block;
   text-align: right;
-  font-family: 'Alex Brush', cursive;
-  font-size: 2.4rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.7rem;
   color: var(--ink);
-  font-weight: 400;
-  line-height: 1;
-  margin: 0 0 6px;
+  line-height: 1.15;
+  margin: 0 0 8px;
 }
 
 .hero .role-tag {
@@ -420,7 +412,7 @@ footer.site p {
 @media (max-width: 600px) {
   body { font-size: 16px; }
   .hero { padding: 44px 20px 40px; }
-  .hero .kicker { font-size: 1.7rem; }
+  .hero .kicker { font-size: 1.3rem; }
   .hero .role-tag { font-size: 0.82rem; margin-bottom: 20px; }
   .hero-blobs .blob-a { width: 170px; height: 170px; right: 150px; }
   .hero-blobs .blob-b { width: 190px; height: 190px; right: -40px; }
