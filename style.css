@@ -112,6 +112,16 @@ header.site {
   white-space: nowrap;
 }
 
+.kicker-link, .self-link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.kicker-link:hover, .self-link:hover {
+  border-bottom-color: currentColor;
+}
+
 hr.rule { display: none; }
 
 .hero {
