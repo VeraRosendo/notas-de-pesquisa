@@ -120,14 +120,12 @@ hr.rule { display: none; }
 .hero > *:not(.hero-blobs) { position: relative; z-index: 1; }
 
 .hero .kicker {
-  display: inline-block;
-  font-size: 0.88rem;
-  color: var(--c-ex);
+  display: block;
+  text-align: right;
+  font-size: 0.92rem;
+  color: var(--ink);
   font-weight: 600;
-  margin-bottom: 18px;
-  background: var(--c-ex-tint);
-  padding: 6px 14px;
-  border-radius: 999px;
+  margin: 0 0 28px;
 }
 
 .hero h1 {
