@@ -27,6 +27,8 @@
   --c-env-tint: #f8e4e9;
   --c-ges: #c94f8c;
   --c-ges-tint: #f9e2ee;
+  --c-ev: #2b6f8f;
+  --c-ev-tint: #dfeaf0;
 }
 
 [data-cat="ef"]  { --accent: var(--c-ef);  --accent-tint: var(--c-ef-tint); }
@@ -36,6 +38,7 @@
 [data-cat="fp"]  { --accent: var(--c-fp);  --accent-tint: var(--c-fp-tint); }
 [data-cat="env"] { --accent: var(--c-env); --accent-tint: var(--c-env-tint); }
 [data-cat="ges"] { --accent: var(--c-ges); --accent-tint: var(--c-ges-tint); }
+[data-cat="ev"]  { --accent: var(--c-ev);  --accent-tint: var(--c-ev-tint); }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
