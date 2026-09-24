@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notas-de-pesquisa.vercel.app/sitemap.xml
