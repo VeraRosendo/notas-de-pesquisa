@@ -115,6 +115,21 @@ header.site {
   white-space: nowrap;
 }
 
+.site-head-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(245,247,240,0.85);
+  white-space: nowrap;
+}
+
+.nav-link:hover { color: var(--c-ev); }
+
 .kicker-link, .self-link {
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -166,6 +181,24 @@ hr.rule { display: none; }
   line-height: 1.15;
   margin: 0 0 8px;
 }
+
+.hero-person {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 16px;
+}
+
+.hero-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--surface);
+  box-shadow: 0 8px 20px -8px rgba(32,38,29,0.35);
+  transition: transform 0.18s ease;
+}
+
+.hero-photo:hover { transform: scale(1.04); }
 
 .hero .role-tag {
   display: block;
@@ -454,8 +487,14 @@ footer.site p.credits {
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
+  .site-head-row { flex-wrap: wrap; row-gap: 8px; }
+  .brand { font-size: 1.05rem; }
+  .brand-mark { width: 18px; height: 18px; }
+  .site-head-right { gap: 12px; }
+  .nav-link, .site-loc { font-size: 0.75rem; }
   .hero { padding: 44px 20px 40px; }
   .hero .kicker { font-size: 1.3rem; }
+  .hero-photo { width: 72px; height: 72px; }
   .hero .role-tag { font-size: 0.82rem; margin-bottom: 20px; }
   .hero-blobs .blob-a { width: 170px; height: 170px; right: 150px; }
   .hero-blobs .blob-b { width: 190px; height: 190px; right: -40px; }
