@@ -29,6 +29,8 @@
   --c-ges-tint: #f9e2ee;
   --c-ev: #2b6f8f;
   --c-ev-tint: #dfeaf0;
+  --c-gd: #b5443b;
+  --c-gd-tint: #f7e2df;
 }
 
 [data-cat="ef"]  { --accent: var(--c-ef);  --accent-tint: var(--c-ef-tint); }
@@ -39,6 +41,7 @@
 [data-cat="env"] { --accent: var(--c-env); --accent-tint: var(--c-env-tint); }
 [data-cat="ges"] { --accent: var(--c-ges); --accent-tint: var(--c-ges-tint); }
 [data-cat="ev"]  { --accent: var(--c-ev);  --accent-tint: var(--c-ev-tint); }
+[data-cat="gd"]  { --accent: var(--c-gd);  --accent-tint: var(--c-gd-tint); }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -442,7 +445,13 @@ hr.rule { display: none; }
   margin: 38px 0 12px;
 }
 
-.body-text p { margin: 0 0 18px; color: var(--ink); }
+.body-text p {
+  margin: 0 0 18px;
+  color: var(--ink);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
 
 .body-text .stat-line {
   font-family: 'Fraunces', serif;
