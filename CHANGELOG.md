@@ -26,3 +26,16 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 2. Categorias mais comuns: **Adicionado** (algo novo), **Alterado** (algo que já existia e mudou), **Corrigido** (um erro consertado), **Removido** (algo tirado do ar).
 3. Não precisa ser detalhado como um relatório técnico, uma linha por mudança já cumpre o papel.
 4. No início de uma nova conversa comigo sobre este site, cole o conteúdo deste arquivo, ou simplesmente diga "olha o changelog no repositório", para eu me situar rápido sobre o que já existe.
+## 2026-09-26
+### Adicionado
+- Novo pilar "Guias de Condicionamento Físico" (guias.html), com o primeiro guia: "Treinamento de força para iniciantes: por onde começar"
+- Link "Guias" no cabeçalho de todas as páginas do site
+- Nova cor de categoria "Guia" (terracota) no CSS
+- Quadro de indicação profissional no guia de treinamento de força, apresentando Flávio Nanami (preparador físico, coautor de um dos artigos da Manu) como opção de acompanhamento individualizado, com link para flavionanami.com.br
+
+### Alterado
+- Nome de Flávio Yoshio Nanami, no artigo "Aula de educação física sem jogar bola?", agora é um link para o site dele
+- sitemap.xml atualizado com as duas páginas novas (guias.html e o guia de treinamento de força)
+
+### Corrigido
+- Justificação de texto e hifenização automática (text-align: justify + hyphens: auto) aplicadas ao body-text, pendência desde a definição desse padrão para todos os sites
