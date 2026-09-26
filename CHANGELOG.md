@@ -39,3 +39,16 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 
 ### Corrigido
 - Justificação de texto e hifenização automática (text-align: justify + hyphens: auto) aplicadas ao body-text, pendência desde a definição desse padrão para todos os sites
+## 2026-09-26
+### Adicionado
+- 4 novos guias no pilar "Guias de Condicionamento Físico": "Treino cardiorrespiratório para iniciantes", "Como avaliar sua própria aptidão física, sem equipamento de laboratório", "Mitos comuns sobre exercício físico" e "Mobilidade e flexibilidade" (total: 5 guias)
+- Quadro de indicação profissional no guia de treinamento de força, apresentando Flávio Nanami (preparador físico) como opção de acompanhamento individualizado, com link para flavionanami.com.br
+
+### Alterado
+- Nome de Flavio Yoshio Nanami, no artigo "Aula de educação física sem jogar bola?", agora é um link para o site dele (flavionanami.com.br)
+- guias.html atualizado para listar os 5 guias
+- sitemap.xml atualizado com as 4 páginas novas
+
+### Corrigido
+- Citações incompletas nos guias de Autoavaliação, Mitos e Mobilidade: adicionadas referências específicas (Jones, Rikli & Beam 1999; Schoenfeld & Contreras 2013; Kraemer & Ratamess 2004; Kay & Blazevich 2012) para reforçar o rigor do conteúdo publicado como referência
+  
