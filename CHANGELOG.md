@@ -51,4 +51,7 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 
 ### Corrigido
 - Citações incompletas nos guias de Autoavaliação, Mitos e Mobilidade: adicionadas referências específicas (Jones, Rikli & Beam 1999; Schoenfeld & Contreras 2013; Kraemer & Ratamess 2004; Kay & Blazevich 2012) para reforçar o rigor do conteúdo publicado como referência
-  
+## 2026-09-27
+### Adicionado
+- 6º guia no pilar "Guias de Condicionamento Físico": "Treinamento multicomponente para pessoas idosas, o que diz a ciência", com base na revisão de literatura do pré-projeto de doutorado da Manu (PPGEF/UFES, 2024), que não seguiu adiante com o orientador
+- guias.html e sitemap.xml atualizados
