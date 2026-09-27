@@ -304,6 +304,20 @@ hr.rule { display: none; }
   scroll-margin-top: 24px;
 }
 
+.back-to-menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  margin: 18px 0 8px;
+}
+
+.back-to-menu:hover {
+  color: var(--accent, var(--ink));
+}
+
 .index-grid:first-of-type,
 h3.theme-heading:first-of-type {
   margin-top: 0;
