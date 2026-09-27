@@ -1,5 +1,24 @@
 ## 2026-09-27
 ### Adicionado
+- Conexão pessoal da Manu com o Congresso FIEPS (divulgadora oficial, edição 2021)
+- Links cruzados com o site do Flávio Nanami (byline em "aula-sem-jogar-bola.html" e quadro de indicação em "treinamento-forca-iniciantes.html")
+- 15 posts de Instagram (formato story) cobrindo os 9 artigos + 6 guias iniciais
+- Novo guia "Treinamento multicomponente para pessoas idosas", baseado na revisão de literatura do pré-projeto de doutorado da Manu
+- 9 novos guias: vestuário e proteção solar, hidratação, sono e recuperação, exercício em calor/frio, relógio de frequência cardíaca, recuperação e terapias regenerativas, HYROX, Pilates, manobra de Valsalva (total: 15 guias)
+- 6 novas coberturas em Tendências: ECSS 2026, Milano-Cortina 2026 (ciência), reformulação do Programa Academia da Saúde, e 3 matérias de opinião/análise (personal trainer e supervisão em academias, dieta vs. exercício, adesão por gênero) — mais corrida em trilha no Brasil (total: 11 itens)
+- Menu de atalho por tema em index.html (7 temas, cores já existentes), guias.html (6 temas novos) e tendencias.html (5 temas novos, incluindo "Opinião")
+- Link "← Voltar ao menu" ao final de toda página individual de conteúdo, apontando para a âncora do tema de origem (regra permanente a partir de agora)
+- Tag og:url em todas as 39 páginas HTML do site (estava ausente desde o início, causava falha na prévia de compartilhamento no WhatsApp/Facebook)
+
+### Alterado
+- index.html: corrigido link "Guias" que estava ausente do cabeçalho
+- style.css: novas classes .quick-jump-row, .quick-jump-btn, .theme-heading, .back-to-menu
+- Artigo sobre personal trainer reformulado (removido o ângulo de custo, mantida a proporção aluno-profissional como argumento central) e renomeado de analise-personal-trainer-custo-supervisao.html para orientacao-tecnica-academias.html, com título "Orientação técnica no uso dos aparelhos: o que toda academia deveria garantir"
+- Ícone do guia de multicomponente para idosos corrigido (o desenho original formava acidentalmente o símbolo de Vênus)
+
+### Corrigido
+- Citações incompletas nos guias de Autoavaliação, Mitos e Mobilidade (referências específicas adicionadas)## 2026-09-27
+### Adicionado
 - Menu de atalho por tema em index.html, guias.html e tendencias.html (estilo "quick jump", inspirado no site CorpoVivo)
 - Conteúdo reagrupado em seções temáticas coloridas:
   - index.html: pelas 7 categorias já existentes (Exercício Físico, Educação Física, Ensino Superior, Saúde Mental, Formação de Professores, Envelhecimento, Gestação)
