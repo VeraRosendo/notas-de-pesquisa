@@ -1,4 +1,13 @@
-# Changelog
+## 2026-09-27
+### Adicionado
+- Menu de atalho por tema em index.html, guias.html e tendencias.html (estilo "quick jump", inspirado no site CorpoVivo)
+- Conteúdo reagrupado em seções temáticas coloridas:
+  - index.html: pelas 7 categorias já existentes (Exercício Físico, Educação Física, Ensino Superior, Saúde Mental, Formação de Professores, Envelhecimento, Gestação)
+  - guias.html: 6 novos temas (Treino, Aptidão física, Mitos, Mobilidade, Vestuário, Cuidados), cada um com cor própria
+  - tendencias.html: 4 novos temas (Congressos científicos, Mercado fitness, Grandes eventos, Políticas públicas), cada um com cor própria
+
+### Alterado
+- style.css: novas classes .quick-jump-row, .quick-jump-btn e .theme-heading, reutilizadas nas três páginas# Changelog
 
 Todas as mudanças relevantes deste site são registradas aqui, da mais recente para a mais antiga.
 
