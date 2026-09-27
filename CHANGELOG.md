@@ -55,3 +55,8 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 ### Adicionado
 - 6º guia no pilar "Guias de Condicionamento Físico": "Treinamento multicomponente para pessoas idosas, o que diz a ciência", com base na revisão de literatura do pré-projeto de doutorado da Manu (PPGEF/UFES, 2024), que não seguiu adiante com o orientador
 - guias.html e sitemap.xml atualizados
+## 2026-09-27
+### Adicionado
+- 5 novos guias: vestuário e proteção solar, hidratação, sono e recuperação, exercício em calor/frio, uso de relógio de frequência cardíaca
+- 3 novas coberturas em "Tendências": ECSS 2026, Milano-Cortina 2026 (ciência), reformulação do Programa Academia da Saúde
+- guias.html, tendencias.html e sitemap.xml atualizados (23 páginas de conteúdo no total)
