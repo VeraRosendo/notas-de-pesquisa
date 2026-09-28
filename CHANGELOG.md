@@ -121,3 +121,4 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 ### Adicionado
 - Seção "Fisiologia do Exercício" (fisiologia.html), com link no menu de todas as páginas e categoria de cor própria (--c-fis)
 - Primeiro texto: "O corpo em exercício funciona como um sistema integrado" (fisiologia/corpo-sistema-integrado.html), com diagrama, box de números, box "Mito ou fato" e 15 referências
+- Foto do topo do index: saiu do círculo e passou a usar recorte sem fundo (img/manuela-recorte.webp, com PNG de reserva), com esfumado oval nos ombros, diretamente sobre as manchas coloridas
