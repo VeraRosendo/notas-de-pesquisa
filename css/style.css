@@ -612,3 +612,16 @@ a:focus-visible, button:focus-visible {
 .memorial-note { font-style: italic; color: var(--ink-soft); }
 .memorial-quote { margin: 2rem 0; padding-left: 1.25rem; border-left: 3px solid var(--line); font-style: italic; }
 .memorial-quote cite { display: block; margin-top: 0.4rem; font-style: normal; font-size: 0.9rem; color: var(--ink-faint); }
+
+/* Botões do hero (Lattes e Trajetória acadêmica) */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.trajetoria-link::before { background: var(--c-sm); }
+.trajetoria-link:hover {
+  color: var(--c-sm);
+  border-color: var(--c-sm);
+}
