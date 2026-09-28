@@ -127,3 +127,14 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 ### Adicionado
 - Texto "Ácido lático: como um combustível do corpo virou vilão da dor muscular" (fisiologia/acido-latico-dor-muscular.html), novo tema "Mito ou fato" em fisiologia.html, 12 referências
 - Link para o novo texto no box de mitos e no "Leia também" de corpo-sistema-integrado.html
+
+## 2026-09-28 (index)
+### Alterado
+- Topo do index sem foto, nome e bio: título, parágrafo voltado ao leitor e linha discreta de autoria com link para o novo bloco
+- Novo bloco "Quem escreve" no fim do index (#quem-escreve), com foto recortada, nome, qualificação, bio e botões Lattes e Trajetória acadêmica
+
+## 2026-09-28 (TCC)
+### Adicionado
+- Versão de divulgação do TCC da Manu: artigos/excesso-peso-criancas-porto-velho.html, com dados recalculados, comparação corrigida com a referência da OMS, tabelas e nota de revisão
+- Novo tema "Infância" no index (cor --c-inf), estilo global de tabelas (.data-table)
+- Link para o texto no box "Marcos da trajetória"
