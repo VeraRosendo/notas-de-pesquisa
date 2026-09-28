@@ -580,3 +580,35 @@ a:focus-visible, button:focus-visible {
   * { transition: none !important; }
   .brand-mark { animation: none !important; }
 }
+
+/* Boxes informativos e "Leia também" (padrão do site) */
+.info-box {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-tint);
+}
+.info-box h4 { margin: 0 0 0.75rem; color: var(--accent); font-size: 1.05rem; }
+.info-box p {
+  margin: 0 0 0.6rem;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.info-box p:last-child { margin-bottom: 0; }
+.info-box .num { font-weight: 700; color: var(--accent); font-size: 1.15rem; }
+.full-paper .ref { margin: 0 0 0.7rem; text-align: left; overflow-wrap: anywhere; }
+.full-paper .ref-title { font-weight: 700; margin-bottom: 0.8rem; }
+.see-also {
+  margin: 2rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.see-also-title { margin: 0 0 0.5rem; font-weight: 700; color: var(--accent); }
+.see-also ul { margin: 0; padding-left: 1.1rem; }
+.see-also li { margin: 0.3rem 0; }
+.memorial-note { font-style: italic; color: var(--ink-soft); }
+.memorial-quote { margin: 2rem 0; padding-left: 1.25rem; border-left: 3px solid var(--line); font-style: italic; }
+.memorial-quote cite { display: block; margin-top: 0.4rem; font-style: normal; font-size: 0.9rem; color: var(--ink-faint); }
