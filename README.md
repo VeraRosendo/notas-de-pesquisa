@@ -41,7 +41,7 @@ Para adicionar um novo artigo:
 
 Lacunas identificadas no mapeamento de 27/09/2026, a priorizar com os dados do Google Search Console e do Vercel Analytics:
 
-- Fisiologia do exercício (novo tema)
+- Fisiologia do exercício: seção criada em 28/09/2026 (fisiologia.html); primeiro texto publicado, "O corpo em exercício funciona como um sistema integrado"
 - Emagrecimento e composição corporal (guia prático)
 - Exercício e doenças crônicas: hipertensão, diabetes tipo 2, obesidade, dor lombar crônica
 - Ciclo de vida: pós-parto, menopausa, crianças e adolescentes
