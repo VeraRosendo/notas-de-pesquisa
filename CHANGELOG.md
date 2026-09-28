@@ -110,3 +110,9 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 ### Alterado
 - Trajetória acadêmica: citação final trocada para Paulo Freire; retiradas a nota explicativa e a menção à expectativa de cursar o doutorado
 - Resumo do artigo sobre orientação técnica em tendencias.html atualizado
+
+## 2026-09-28 (revisão científica)
+### Alterado
+- Artigo "Escolhido por último" revisto com base em parecer externo e conferência das fontes: separação entre ensaio teórico e estudos empíricos, causalidade qualificada em todo o texto, nova seção "O olhar da psicologia do exercício" (clima motivacional, autodeterminação, afeto, memória reconstrutiva), box com cadeia hipotética, seção "Os limites da evidência" e proposta pedagógica ampliada; referências passam de 5 para 14
+- Box da Trajetória e resumo em tendencias.html ajustados para "possível ponte"
+- Botão "Trajetória acadêmica" no index, ao lado do Currículo Lattes (estilo .trajetoria-link em css/style.css)
