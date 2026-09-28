@@ -31,6 +31,8 @@
   --c-ev-tint: #dfeaf0;
   --c-gd: #b5443b;
   --c-gd-tint: #f7e2df;
+  --c-fis: #0e7490;
+  --c-fis-tint: #dff1f5;
 }
 
 [data-cat="ef"]  { --accent: var(--c-ef);  --accent-tint: var(--c-ef-tint); }
@@ -42,6 +44,7 @@
 [data-cat="ges"] { --accent: var(--c-ges); --accent-tint: var(--c-ges-tint); }
 [data-cat="ev"]  { --accent: var(--c-ev);  --accent-tint: var(--c-ev-tint); }
 [data-cat="gd"]  { --accent: var(--c-gd);  --accent-tint: var(--c-gd-tint); }
+[data-cat="fis"] { --accent: var(--c-fis); --accent-tint: var(--c-fis-tint); }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -625,3 +628,10 @@ a:focus-visible, button:focus-visible {
   color: var(--c-sm);
   border-color: var(--c-sm);
 }
+
+/* Fisiologia: diagrama e box de mitos */
+.fis-diagram { margin: 2rem 0; }
+.fis-diagram-scroll { overflow-x: auto; }
+.fis-diagram svg { display: block; width: 100%; min-width: 520px; height: auto; }
+.fis-diagram figcaption { font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.6rem; text-align: center; }
+.info-box .info-source { font-size: 0.85rem; color: var(--ink-soft); }
