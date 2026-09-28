@@ -194,17 +194,18 @@ hr.rule { display: none; }
   margin: 0 0 16px;
 }
 
+.hero-person a { display: block; }
+
 .hero-photo {
   width: 96px;
   height: 96px;
-  border-radius: 50%;
+  border-radius: 10px;
   object-fit: cover;
-  border: 3px solid var(--surface);
-  box-shadow: 0 8px 20px -8px rgba(32,38,29,0.35);
+  box-shadow: 0 10px 24px -10px rgba(32,38,29,0.45);
   transition: transform 0.18s ease;
 }
 
-.hero-photo:hover { transform: scale(1.04); }
+.hero-photo:hover { transform: scale(1.03); }
 
 .hero .role-tag {
   display: block;
@@ -635,3 +636,19 @@ a:focus-visible, button:focus-visible {
 .fis-diagram svg { display: block; width: 100%; min-width: 520px; height: auto; }
 .fis-diagram figcaption { font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.6rem; text-align: center; }
 .info-box .info-source { font-size: 0.85rem; color: var(--ink-soft); }
+
+/* Foto recortada (sem fundo) no topo do index */
+.hero-photo.hero-photo-cutout {
+  width: auto;
+  height: 150px;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 14px rgba(32,38,29,0.28));
+  -webkit-mask-image: radial-gradient(ellipse 60% 68% at 50% 36%, #000 70%, transparent 100%);
+  mask-image: radial-gradient(ellipse 60% 68% at 50% 36%, #000 70%, transparent 100%);
+}
+.hero-photo.hero-photo-cutout:hover { transform: none; }
+@media (max-width: 640px) {
+  .hero-photo.hero-photo-cutout { width: auto; height: 112px; }
+}
