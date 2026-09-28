@@ -122,3 +122,8 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 - Seção "Fisiologia do Exercício" (fisiologia.html), com link no menu de todas as páginas e categoria de cor própria (--c-fis)
 - Primeiro texto: "O corpo em exercício funciona como um sistema integrado" (fisiologia/corpo-sistema-integrado.html), com diagrama, box de números, box "Mito ou fato" e 15 referências
 - Foto do topo do index: saiu do círculo e passou a usar recorte sem fundo (img/manuela-recorte.webp, com PNG de reserva), com esfumado oval nos ombros, diretamente sobre as manchas coloridas
+
+## 2026-09-28 (Fisiologia: Mito ou fato)
+### Adicionado
+- Texto "Ácido lático: como um combustível do corpo virou vilão da dor muscular" (fisiologia/acido-latico-dor-muscular.html), novo tema "Mito ou fato" em fisiologia.html, 12 referências
+- Link para o novo texto no box de mitos e no "Leia também" de corpo-sistema-integrado.html
