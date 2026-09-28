@@ -7,7 +7,8 @@ Site estático simples (HTML/CSS puro, sem build), pronto para publicar no GitHu
 ```
 index.html              → página inicial
 artigos/*.html           → cada artigo
-style.css                → estilo compartilhado
+css/style.css            → estilo compartilhado
+guias/*.html             → cada guia prático
 ```
 
 ## Como publicar (GitHub + Vercel, sem domínio .br)
@@ -34,3 +35,16 @@ Para adicionar um novo artigo:
 2. Ajuste título, autoria, DOI e texto
 3. Adicione uma nova entrada em `index.html`, na seção `<section class="index">`
 4. Envie os arquivos atualizados para o GitHub (upload direto ou `git push`) — o Vercel republica o site automaticamente a cada atualização do repositório
+
+
+## Pauta editorial: temas a desenvolver
+
+Lacunas identificadas no mapeamento de 27/09/2026, a priorizar com os dados do Google Search Console e do Vercel Analytics:
+
+- Fisiologia do exercício (novo tema)
+- Emagrecimento e composição corporal (guia prático)
+- Exercício e doenças crônicas: hipertensão, diabetes tipo 2, obesidade, dor lombar crônica
+- Ciclo de vida: pós-parto, menopausa, crianças e adolescentes
+- Progressão de treino: periodização, controle de intensidade, dor muscular tardia, retorno após pausa, prevenção de lesões
+- Síntese do Guia de Atividade Física para a População Brasileira (Ministério da Saúde, 2021)
+- Trilhas por perfil na página inicial ("Estou começando", "Tenho mais de 60 anos", "Estou gestante", "Sou profissional ou estudante de EF")

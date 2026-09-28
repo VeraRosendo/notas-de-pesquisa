@@ -88,3 +88,25 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 - 5 novos guias: vestuário e proteção solar, hidratação, sono e recuperação, exercício em calor/frio, uso de relógio de frequência cardíaca
 - 3 novas coberturas em "Tendências": ECSS 2026, Milano-Cortina 2026 (ciência), reformulação do Programa Academia da Saúde
 - guias.html, tendencias.html e sitemap.xml atualizados (23 páginas de conteúdo no total)
+
+## 2026-09-27 (arquitetura)
+### Adicionado
+- Página "Trajetória acadêmica" (memorial crítico-reflexivo da Manu), com link na página Sobre
+- Blocos "Leia também" com links cruzados recíprocos entre artigos e guias relacionados (11 páginas)
+- Estilos globais .info-box, .see-also e de referências em css/style.css
+- Pauta editorial no README, incluindo fisiologia do exercício como tema a desenvolver
+### Alterado
+- Artigo de opinião "Orientação técnica no uso dos aparelhos" reescrito (sem foco em personal trainer, referências ampliadas)
+- Rodapé uniformizado em todo o site: "Produção, revisão e edição: Travessias · Desenvolvimento técnico: Claude (IA)"
+- Títulos das abas: " — Notas de Pesquisa" substituído por " | Notas de Pesquisa"
+### Removido
+- guias/corrida-trilha-brasil-2026.html (cópia órfã de artigos/corrida-trilha-brasil-2026.html)
+
+## 2026-09-28
+### Adicionado
+- Artigo de opinião "Escolhido por último" (Tendências, tema Opinião), sobre exclusão na escolha de times e atividade física na vida adulta
+- Box "O que a pesquisa diz" na página Trajetória acadêmica, com link para o novo artigo
+- Links "Leia também" recíprocos entre o novo artigo, a Trajetória e os artigos de Educação Física escolar
+### Alterado
+- Trajetória acadêmica: citação final trocada para Paulo Freire; retiradas a nota explicativa e a menção à expectativa de cursar o doutorado
+- Resumo do artigo sobre orientação técnica em tendencias.html atualizado
