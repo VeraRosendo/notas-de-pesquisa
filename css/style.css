@@ -652,3 +652,62 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 640px) {
   .hero-photo.hero-photo-cutout { width: auto; height: 112px; }
 }
+
+/* Linha de autoria no topo e bloco "Quem escreve" no fim do index */
+.hero p.hero-byline {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.hero p.hero-byline a {
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.hero p.hero-byline a:hover { color: var(--c-ex); border-bottom-color: var(--c-ex); }
+
+.author-block {
+  max-width: var(--max-wide);
+  margin: 8px auto 56px;
+  padding: 0 24px;
+}
+.author-label {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+.author-inner {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(120deg, var(--c-ex-tint), var(--surface) 55%);
+}
+.author-photo-link { flex: 0 0 auto; }
+.author-photo {
+  display: block;
+  height: 190px;
+  width: auto;
+  filter: drop-shadow(0 8px 14px rgba(32,38,29,0.25));
+  -webkit-mask-image: radial-gradient(ellipse 60% 68% at 50% 36%, #000 70%, transparent 100%);
+  mask-image: radial-gradient(ellipse 60% 68% at 50% 36%, #000 70%, transparent 100%);
+}
+.author-text h2 { margin: 0 0 6px; font-size: 1.45rem; font-weight: 500; line-height: 1.25; }
+.author-text h2 a { color: var(--ink); }
+.author-role { margin: 0 0 12px; font-weight: 600; color: var(--ink-soft); font-size: 0.95rem; }
+.author-bio {
+  margin: 0 0 16px;
+  color: var(--ink);
+  line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+@media (max-width: 640px) {
+  .author-inner { flex-direction: column; align-items: flex-start; padding: 22px; }
+  .author-photo { height: 150px; }
+}
