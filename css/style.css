@@ -727,3 +727,6 @@ a:focus-visible, button:focus-visible {
 .data-table th, .data-table td { padding-left: 0.5rem; padding-right: 0.5rem; }
 .data-table td:first-child { min-width: 4.5rem; }
 .data-table .th-n { font-weight: 400; font-size: 0.82rem; color: var(--ink-soft); }
+.data-table.text-table td { white-space: normal; text-align: left; vertical-align: top; }
+.data-table.text-table th { text-align: left; }
+.data-table.text-table td:first-child { font-weight: 600; min-width: 6.5rem; }
