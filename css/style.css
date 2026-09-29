@@ -730,3 +730,300 @@ a:focus-visible, button:focus-visible {
 .data-table.text-table td { white-space: normal; text-align: left; vertical-align: top; }
 .data-table.text-table th { text-align: left; }
 .data-table.text-table td:first-child { font-weight: 600; min-width: 6.5rem; }
+
+/* ==========================================================================
+   Mapa do site, trilha de localização, mapa da página e menus suspensos
+   (dados em js/mapa-dados.js; montagem em js/mapa.js)
+   ========================================================================== */
+:root { --c-mit: #a0522d; --c-mit-tint: #f6e9e1; }
+[data-cat="mit"] { --accent: var(--c-mit); --accent-tint: var(--c-mit-tint); }
+
+/* Mapa completo na página inicial */
+.mapa-site {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 8px 24px 48px;
+  scroll-margin-top: 16px;
+}
+.mapa-site-titulo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+.mapa-site-intro {
+  max-width: var(--max);
+  margin: 0 0 28px;
+  color: var(--ink-soft);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.mapa-linha {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.mapa-linha::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+  background: var(--line);
+}
+.mapa-estacao {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 18px;
+  padding-bottom: 22px;
+}
+.mapa-estacao:last-child { padding-bottom: 0; }
+.mapa-num {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--cor);
+  color: #fff;
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 0 0 5px var(--paper);
+}
+.mapa-corpo {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--cor);
+  border-radius: 10px;
+  padding: 14px 18px 12px;
+}
+.mapa-titulo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.mapa-titulo a { color: var(--cor); }
+.mapa-titulo a:hover { text-decoration: underline; }
+.mapa-desc {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.mapa-detalhes summary {
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  padding: 4px 0;
+  list-style-position: inside;
+}
+.mapa-detalhes summary:hover { color: var(--cor); }
+.mapa-detalhes[open] summary { color: var(--cor); }
+.mapa-temas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 14px 24px;
+  margin: 10px 0 6px;
+}
+.mapa-tema {
+  border-left: 3px solid var(--cor-tema);
+  padding-left: 12px;
+}
+.mapa-tema-titulo {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--cor-tema);
+  margin-bottom: 4px;
+}
+.mapa-tema-titulo:hover { text-decoration: underline; }
+.mapa-subgrupo {
+  margin: 6px 0 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+}
+.mapa-tema ul { margin: 0; padding-left: 1rem; }
+.mapa-tema li { margin: 3px 0; font-size: 0.88rem; line-height: 1.45; }
+.mapa-tema li a { color: var(--ink); }
+.mapa-tema li a:hover { color: var(--cor-tema); text-decoration: underline; }
+.mapa-fallback { margin: 0; padding-left: 1.2rem; }
+.mapa-fallback li { margin: 4px 0; }
+.mapa-fallback a { font-weight: 600; }
+
+/* Trilha de localização */
+.trilha { margin: 0 0 18px; font-size: 0.85rem; }
+.trilha ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+}
+.trilha li { color: var(--ink-faint); }
+.trilha li + li::before { content: "›"; margin: 0 8px; color: var(--ink-faint); }
+.trilha a { color: var(--ink-soft); font-weight: 600; }
+.trilha a:hover { color: var(--accent); }
+.trilha [aria-current] { color: var(--ink-faint); }
+
+/* Mapa da página ("Nesta página") */
+.mapa-pagina {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.mapa-pagina-titulo {
+  margin: 0 0 10px !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-align: left !important;
+}
+.mapa-pagina ol {
+  list-style: none;
+  counter-reset: passo;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mapa-pagina li { counter-increment: passo; }
+.mapa-pagina li a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 0.84rem;
+  font-style: normal;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.mapa-pagina li a::before {
+  content: counter(passo);
+  font-weight: 700;
+  color: var(--accent);
+}
+.mapa-pagina li.mapa-pagina-refs a::before { content: "§"; }
+.mapa-pagina li a:hover { border-color: var(--accent); color: var(--accent); }
+.body-text h3, .full-paper { scroll-margin-top: 20px; }
+
+/* Menu suspenso no menu de atalho */
+.qj-suspenso { position: relative; }
+.qj-botao {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.qj-seta {
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.15s ease;
+}
+.qj-botao[aria-expanded="true"] .qj-seta { transform: rotate(-135deg) translateY(-2px); }
+.qj-botao:focus-visible, .mapa-detalhes summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.qj-painel {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 280px;
+  max-width: min(420px, 90vw);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 10px 24px -10px rgba(32,38,29,0.35);
+  padding: 12px 16px 14px;
+}
+.qj-todos { display: block; font-weight: 700; font-size: 0.88rem; color: var(--accent); margin-bottom: 6px; }
+.qj-grupo { margin: 10px 0 2px; font-size: 0.78rem; font-weight: 700; color: var(--ink-faint); }
+.qj-painel ul { margin: 0; padding-left: 1rem; }
+.qj-painel li { margin: 4px 0; font-size: 0.88rem; line-height: 1.4; }
+.qj-painel li a:hover, .qj-todos:hover { text-decoration: underline; }
+.subgrupo-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink-faint);
+  margin: 26px 0 12px;
+}
+.index-grid + .subgrupo-heading { margin-top: 30px; }
+
+/* Página Mitos */
+.mito {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--cor-tema, var(--accent));
+  border-radius: 10px;
+  padding: 16px 20px 14px;
+  margin: 0 0 16px;
+  scroll-margin-top: 20px;
+}
+.mito-fato {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.mito p { margin: 0 0 8px; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+.mito-crenca { color: var(--ink-soft); }
+.mito-rotulo {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  background: var(--c-mit-tint);
+  color: var(--c-mit);
+  vertical-align: 1px;
+}
+.mito-aprofundar { font-size: 0.88rem; color: var(--ink-soft); text-align: left !important; }
+.mito-aprofundar a { color: var(--accent); font-weight: 600; }
+.mito-aprofundar a:hover { text-decoration: underline; }
+.mitos-lista { max-width: var(--max); }
+.mitos-refs { max-width: var(--max); margin: 40px 0 0; }
+
+@media (max-width: 640px) {
+  .mapa-site { padding-left: 20px; padding-right: 20px; }
+  .mapa-estacao { grid-template-columns: 32px 1fr; gap: 12px; }
+  .mapa-num { width: 32px; height: 32px; font-size: 0.95rem; }
+  .mapa-linha::before { left: 15px; }
+  .mapa-corpo { padding: 12px 14px 10px; }
+  .qj-painel { position: static; margin-top: 8px; min-width: 0; max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qj-seta { transition: none; }
+}
+.inline-link { color: var(--c-mit); font-weight: 600; border-bottom: 1px solid currentColor; }
+.inline-link:hover { border-bottom-width: 2px; }
+.info-box .info-source a { color: var(--accent); font-weight: 600; border-bottom: 1px solid currentColor; }
+@media (max-width: 640px) {
+  .site-head-right { flex-wrap: wrap; row-gap: 6px; column-gap: 14px; }
+}
