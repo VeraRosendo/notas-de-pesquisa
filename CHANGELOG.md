@@ -143,3 +143,5 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 ### Adicionado
 - Texto "O organismo em movimento: como o estresse do exercício se transforma em adaptação" (fisiologia/organismo-em-movimento.html): homeostase, estresse fisiológico, adaptação, fadiga × dano × recuperação, overreaching e overtraining; diagrama do ciclo do treino, tabela comparativa, box "Mito ou fato" e 16 referências
 - Links "Leia também" nos dois textos anteriores de Fisiologia
+
+- Texto "Energia para o exercício: como o músculo produz ATP do primeiro segundo à última hora" (fisiologia/energia-para-o-exercicio.html): ATP, fosfagênio, glicólise, oxidativo, aeróbio × anaeróbio e lactato; gráfico de contribuição por duração (Gastin e Suppiah, 2026), tabela dos três sistemas, box "Mito ou fato", 8 referências
