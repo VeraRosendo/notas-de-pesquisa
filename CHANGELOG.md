@@ -50,6 +50,7 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 - Textos de Fundamentos: box "Mito ou fato" renomeado para "Mitos", com link para a página Mitos; subtítulo "O que é mito" com âncora fixa (#o-que-e-mito)
 - Ácido lático e Mitos comuns: trilha, rótulo e "Voltar ao menu" apontam para a página Mitos
 - index.html: "↑ Voltar ao menu" passou a "↑ Voltar ao mapa"
+- mitos.html: rodapé dos quadros de mito passou de "Para aprofundar" a "Este mito integra", com a parte do site indicada ao lado de cada texto (ex.: Fisiologia · Fundamentos)
 - style.css: estilos do mapa, da trilha, do "Nesta página", do menu suspenso e da página Mitos
 
 ### Corrigido
