@@ -1,6 +1,6 @@
 # Blog da Manu — Pesquisa
 
-Site estático simples (HTML/CSS puro, sem build), pronto para publicar no GitHub + Vercel.
+Site estático simples (HTML, CSS e JS em arquivos separados, sem build), pronto para publicar no GitHub + Vercel.
 
 ## Estrutura
 
@@ -9,6 +9,10 @@ index.html              → página inicial
 artigos/*.html           → cada artigo
 css/style.css            → estilo compartilhado
 guias/*.html             → cada guia prático
+fisiologia/*.html        → textos de Fisiologia do Exercício
+mitos.html               → catálogo de mitos
+js/mapa-dados.js         → estrutura do site (fonte única do mapa, da trilha e dos menus suspensos)
+js/mapa.js               → monta o mapa, a trilha, o "Nesta página" e os menus suspensos
 ```
 
 ## Como publicar (GitHub + Vercel, sem domínio .br)
@@ -48,3 +52,10 @@ Lacunas identificadas no mapeamento de 27/09/2026, a priorizar com os dados do G
 - Progressão de treino: periodização, controle de intensidade, dor muscular tardia, retorno após pausa, prevenção de lesões
 - Síntese do Guia de Atividade Física para a População Brasileira (Ministério da Saúde, 2021)
 - Trilhas por perfil na página inicial ("Estou começando", "Tenho mais de 60 anos", "Estou gestante", "Sou profissional ou estudante de EF")
+
+## Como acrescentar um texto novo ao mapa
+
+1. Crie a página do texto normalmente (ex.: `fisiologia/novo-texto.html`), com os dois scripts do mapa antes de `</body>`, como nas demais páginas.
+2. Abra `js/mapa-dados.js`, encontre o tema correspondente e acrescente uma linha na lista `itens`:
+   `{ "titulo": "Título do texto", "url": "fisiologia/novo-texto.html" }`
+3. Pronto: o mapa da página inicial, a trilha de localização e o menu suspenso se atualizam juntos. O "Nesta página" é montado sozinho a partir dos subtítulos (`<h3>`) do texto.

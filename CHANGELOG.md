@@ -33,6 +33,29 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 ## [Não lançado]
 - (mudanças em andamento entram aqui até serem publicadas)
 
+## 2026-09-29
+### Adicionado
+- Mapa do site na página inicial (seção "Mapa do site", âncora #menu-topo): linha em seis partes, na ordem Artigos, Fisiologia do Exercício, Mitos, Guias, Últimas tendências e Quem escreve; cada parte abre para mostrar temas e textos, todos clicáveis. Substitui o antigo menu de atalho dos artigos
+- Trilha de localização ("Início › Parte › Tema › Página") no topo de todas as páginas, no lugar do antigo link "← voltar"
+- Mapa da página ("Nesta página") nas páginas de conteúdo com três ou mais seções, montado automaticamente a partir dos subtítulos, com atalho para as Referências
+- Menu suspenso em "Fundamentos" (fisiologia.html), dividido em subgrupos (Visão integrada; Metabolismo energético); qualquer tema pode ganhar menu suspenso marcando `menu: true` nos dados
+- Página mitos.html: reúne os 2 textos completos sobre mitos e um catálogo de 15 mitos em 4 temas (Metabolismo e energia; Emagrecimento; Treino e adaptação; O corpo como sistema), no formato do Debunking Handbook 2020 (fato primeiro, crença, por que convence, onde aprofundar), com 27 referências
+- js/mapa-dados.js (fonte única da estrutura do site) e js/mapa.js (montagem do mapa, da trilha, do "Nesta página" e dos menus suspensos)
+- Link "Mitos" e "Mapa do site" no cabeçalho de todas as páginas
+
+### Alterado
+- Cabeçalho: ordem dos links acompanha a sequência do mapa (Fisiologia, Mitos, Guias, Últimas tendências, Mapa do site)
+- fisiologia.html: seção "Mito ou fato" retirada; o botão passou a se chamar "Mitos" e leva à nova página; Fundamentos ganhou subtítulos por subgrupo
+- guias.html: tema "Mitos" retirado (o guia de mitos passou para a página Mitos)
+- Textos de Fundamentos: box "Mito ou fato" renomeado para "Mitos", com link para a página Mitos; subtítulo "O que é mito" com âncora fixa (#o-que-e-mito)
+- Ácido lático e Mitos comuns: trilha, rótulo e "Voltar ao menu" apontam para a página Mitos
+- index.html: "↑ Voltar ao menu" passou a "↑ Voltar ao mapa"
+- style.css: estilos do mapa, da trilha, do "Nesta página", do menu suspenso e da página Mitos
+
+### Corrigido
+- Guia "Mitos comuns": referências convertidas para lista completa com DOI; periódico de Vieira et al. (2016) corrigido (British Journal of Nutrition) e ano de Kraemer e Ratamess corrigido (2005)
+
+
 ## 2026-09-26
 ### Adicionado
 - Página "Sobre" (sobre.html), com bio escrita em primeira pessoa
