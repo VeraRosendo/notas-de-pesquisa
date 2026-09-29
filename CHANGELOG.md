@@ -138,3 +138,8 @@ Todas as mudanças relevantes deste site são registradas aqui, da mais recente 
 - Versão de divulgação do TCC da Manu: artigos/excesso-peso-criancas-porto-velho.html, com dados recalculados, comparação corrigida com a referência da OMS, tabelas e nota de revisão
 - Novo tema "Infância" no index (cor --c-inf), estilo global de tabelas (.data-table)
 - Link para o texto no box "Marcos da trajetória"
+
+## 2026-09-29 (Fisiologia: Fundamentos)
+### Adicionado
+- Texto "O organismo em movimento: como o estresse do exercício se transforma em adaptação" (fisiologia/organismo-em-movimento.html): homeostase, estresse fisiológico, adaptação, fadiga × dano × recuperação, overreaching e overtraining; diagrama do ciclo do treino, tabela comparativa, box "Mito ou fato" e 16 referências
+- Links "Leia também" nos dois textos anteriores de Fisiologia
